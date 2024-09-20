@@ -20,4 +20,9 @@ public class Board extends BaseEntity{
     private String content;
     @Column(length=10,nullable=false)
     private String writer;
+
+    public void change(String title, String content) {
+        this.title=title;
+        this.content=content;
+    }
 }

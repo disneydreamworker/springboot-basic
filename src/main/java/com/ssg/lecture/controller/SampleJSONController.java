@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @Log4j2
 public class SampleJSONController {
-    //API 끼리 데이터만 주고 받을 때 : REST API
+    //데이터만 주고 받을 때 : ex) REST API
     @GetMapping("/helloArr")
     public String[] helloArr(){
         log.info("hello Array .....");
